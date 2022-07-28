@@ -1,0 +1,18 @@
+/* modal-inner */
+
+.modal-inner {
+   padding: 40px 40px;
+
+&__title {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      color: var(--second-text-color);
+      text-align: center;
+      letter-spacing: 0.03rem;
+   }
+}
+

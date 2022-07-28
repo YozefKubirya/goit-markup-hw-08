@@ -1,0 +1,33 @@
+/* overlay */
+.thumb-proects {
+   position: relative;
+   overflow: hidden;
+
+   &__overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: var(--overlay-color);
+         transform: translateY(100%);
+         transition: transform 250ms var(--cubic-bazer);
+         padding: 63px 24px;
+      }
+   
+      &__text-overlay {
+         padding: 0;
+         margin: 0;
+         font-family: Roboto;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 1.55;
+         letter-spacing: 3%;
+         color: var(--accent-text-color-white);
+      }
+}
+
+.portfolio-proects__item:hover .thumb-proects__overlay,
+.portfolio-proects__item:focus .thumb-proects__overlay {
+   transform: translateY(0);
+}

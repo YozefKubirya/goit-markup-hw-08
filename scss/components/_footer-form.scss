@@ -1,0 +1,42 @@
+/* footer-form */
+
+.footer-form {
+   margin-left: auto;
+
+&__text {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: var(--accent-text-color-white);
+      text-transform: uppercase;
+   }
+
+   &__input {
+      width: 360px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      background-color: var(--back-round-color-footer-hero);
+      margin-top: 20px;
+      padding: 16px 16px;
+      transition: border-color 250ms var(--cubic-bazer);
+      color: var(--accent-text-color-white);
+
+      &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+         }
+      
+         &:hover,
+         &:focus {
+            border-color: var(--accent-text-color);
+            outline: none;
+         }
+   }
+
+  
+
+}
+
