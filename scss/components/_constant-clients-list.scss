@@ -1,19 +1,32 @@
 /* constant-clients list */
 .constant-clients {
    display: flex;
+   flex-wrap: wrap; 
    list-style: none;
    justify-content: center;
-   width: 1170px;
+   
+  
+   // width: 1170px;
 
 
    /* constant-clients__item */
-      &__item {
-         margin-right: 30px;
+      // &__item {
+      //    margin-right: 30px;}
 
-        &:nth-child(6) {
-           margin-right: 0;
-                        }
+      //   &__item:nth-child(6) {
+      //      margin-right: 0;
+      //                   }
+
+      &__item {
+         @media screen and(max-width: 767px) {
+   &{width:calc((100% - 60px)/2);
+      margin: 15px;}
+       }
       }
+
+
+
+   //    }
    
    
       /* constant-clients__link and icon */
