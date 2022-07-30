@@ -8,7 +8,7 @@
    background: rgba(0, 0, 0, 0.2);
    opacity: 1;
    transition: opacity 250ms var(--cubic-bazer);
-
+   overflow-y: scroll;
 
    &.is-hidden {
       opacity: 0;
@@ -29,10 +29,18 @@
 }
 
 .modal {
+   
+   @media screen and (min-width:480px) and (max-width:1199px) {
+      width: 450px;
+   }
+      @media screen  and (min-width:1200px){
+      min-width: 528px;
+      min-height: 581px; 
+      }
    @extend %absolutely-centered;
    transition: transform 250ms var(--cubic-bazer);
-   min-width: 528px;
-   min-height: 581px;
+   // min-width: 528px;
+   // min-height: 581px;
    background-color: var(--back-round-color);
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
