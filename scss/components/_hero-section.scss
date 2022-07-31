@@ -1,18 +1,49 @@
+$hero-image-gradient:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 .hero {
-   height: 600px;
+//    height: 600px;
    max-width: 1600px;
    margin-left: auto;
    margin-right: auto;
-   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../imagesforhomwork/herobaner.jpg');
+   background-image: $hero-image-gradient, url('../imagesforhomwork/herobaner.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
    background-color: var(--back-round-color-footer-hero);
-   padding-top: 200px;
-   padding-bottom: 200px;
+   padding-top: 118px;
+   padding-bottom: 118px;
    text-align: center;
 
+@media  screen and (max-width:576px) {
+&{background-image: $hero-image-gradient, url('/imagesforhomwork/mobile-img1x.jpg');}
+}
+@media not all,
+screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 576px) and (min-resolution: 192dpi),
+screen and (max-width: 576px) and (min-resolution: 2dppx){
+      &{background-image: $hero-image-gradient, url('/imagesforhomwork/mobile-img@2x.jpg');}
+}
 
+@media screen and (min-width:576px){
+      &{background-image: $hero-image-gradient, url('/imagesforhomwork/tablet-img1x.jpg');}
+}
+@media not all,
+screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 576px) and (min-resolution: 192dpi),
+screen and (min-width: 576px) and (min-resolution: 2dppx){
+      &{background-image: $hero-image-gradient, url('/imagesforhomwork/tablet-img@2x.jpg');}
+}
+
+@media screen and (min-width:1200px){
+      &{padding-top: 200px;
+      padding-bottom: 200px;
+background-image: $hero-image-gradient, url('/imagesforhomwork/dekstop-img1x.jpg');}
+}
+@media not all,
+screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx){
+      &{background-image: $hero-image-gradient, url('/imagesforhomwork/dekstop-img@2x.jpg');}
+}
    &__title {
       
          margin-top: 0;
