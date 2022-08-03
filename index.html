@@ -54,21 +54,20 @@ aria-controls="menu-container">
       </li>
       </ul> 
 
-      <ul class="modile-list list">
-
-      <li class="mobile-list__item">
-         <a href="#"   class="mobile-list__link">Instagram</a>
-      </li>
-      <li class="mobile-list__item">
-         <a href="#" class="mobile-list__link">Twitter</a>
-      </li>
-      <li class="mobile-list__item">
-         <a href="#" class="mobile-list__link">Facebook</a>
-      </li>
-      <li class="mobile-list__item">
-         <a href="#" class="mobile-list__link">LinkedIn</a>
-      </li>
-      </ul> 
+      <ul class="mobile-list list">
+<li class="mobile-list__item">
+   <a href="#" class="mobile-list__link">Instagram</a>
+</li>
+<li class="mobile-list__item">
+   <a href="#" class="mobile-list__link">Twitter</a>
+</li>
+<li class="mobile-list__item">
+   <a href="#" class="mobile-list__link">Facebook</a>
+</li>
+<li class="mobile-list__item">
+   <a href="#" class="mobile-list__link">LinkedIn</a>
+</li>
+      </ul>
       </div>
       </nav>
       
@@ -80,7 +79,7 @@ aria-controls="menu-container">
          <h1 class="hero__title">Эффективные решения <br/> для вашего бизнеса</h1>
        <button  type="button" class="button-primary" data-modal-open>Заказать услугу</button>
       </div>  
-  </section>  
+  </section>     
    <!-- Наши преимущества -->
 <section class="features section "> 
    <div class="container ">
@@ -130,15 +129,24 @@ aria-controls="menu-container">
       <div class="container">
       <h3 class="work__title">Чем мы занимаемся</h3>
       <ul class="job-list list">
-         <li class="job-list__item"><img class="job-list__image" src="./imagesforhomwork/photo1.jpg" alt="Верстка дизайна сайта на компьютере" width="370"/>
+         <li class="job-list__item">
+            <img class="job-list__image" 
+            srcset="./imagesforhomwork/work-section-1-img1x.jpg 1x ,./imagesforhomwork/work-section-1-img@2x.jpg 2x"
+            src="./imagesforhomwork/photo1.jpg" alt="Верстка дизайна сайта на компьютере" width="370"/>
          <p class="job-list__text">Десктопные приложения</p></li>
 
-         <li class="job-list__item"><img class="job-list__image" src="./imagesforhomwork/photo-2.jpg" alt="Разработка мобильных предложений на компьютере" width="370"/>
+         <li class="job-list__item">
+            <img class="job-list__image"
+             srcset="./imagesforhomwork/work-section-2-img1x.jpg 1x ,./imagesforhomwork/work-section-2-img@2x.jpg 2x"
+            src="./imagesforhomwork/photo-2.jpg" alt="Разработка мобильных предложений на компьютере" width="370"/>
             <p class="job-list__text">Мобильные приложения</p></li>
 
-         <li class="job-list__item"><img class="job-list__image" src="./imagesforhomwork/photo-3.jpg" alt="Работа с палитрой на планшете" width="370"/>
+         <li class="job-list__item">
+            <img class="job-list__image" 
+             srcset="./imagesforhomwork/work-section-3-img1x.jpg 1x ,./imagesforhomwork/work-section-3-img@2x.jpg 2x"
+            src="./imagesforhomwork/photo-3.jpg" alt="Работа с палитрой на планшете" width="370"/>
             <p class="job-list__text">Дизайнерские решения</p></li>
-      </ul>
+      </ul>  
       </div>
    </section>
    <!-- Наша команда -->
@@ -354,7 +362,7 @@ aria-controls="menu-container">
 </li>
  </ul>
 </div>
- </section>
+ </section>   
  <!-- Постоянные клиенты -->
  <section class="clients section"> 
     <div class="container ">

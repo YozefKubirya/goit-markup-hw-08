@@ -25,6 +25,14 @@
      display: none;
   }
   
+
+ 
+}
+.mobile-button:hover .mobile-button__icon-open{
+   fill: var(--accent-text-color);
+}
+.mobile-button:hover .mobile-button__icon-close{
+   fill: var(--accent-text-color);
 }
  .mobile-button__icon-close {
     display: none;
@@ -248,6 +256,22 @@ gap:300px;
    }
    
 
+   .mobile-list{
+      display: flex;
+      @media screen and (min-width:768px) {
+         display: none;
+      }
+      &__item{
+      border-right: 1px solid rgba(33, 33, 33, .2);
+      margin-right: 10px; 
+      }
+      &__link{
+         padding-right: 10px;
+         text-decoration: none;
+         color:var(--accent-text-color);
+         font-size: 24px; 
+      }
+   }
 
 
 

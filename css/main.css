@@ -142,6 +142,14 @@ img {
   }
 }
 
+.mobile-button:hover .mobile-button__icon-open {
+  fill: var(--accent-text-color);
+}
+
+.mobile-button:hover .mobile-button__icon-close {
+  fill: var(--accent-text-color);
+}
+
 .mobile-button__icon-close {
   display: none;
 }
@@ -395,21 +403,21 @@ img {
   }
 }
 
-.modile-list {
+.mobile-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  .modile-list {
+  .mobile-list {
     display: none;
   }
 }
-.modile-list__item {
+.mobile-list__item {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
 }
-.modile-list__link {
+.mobile-list__link {
   padding-right: 10px;
   text-decoration: none;
   color: var(--accent-text-color);
