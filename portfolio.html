@@ -24,9 +24,13 @@
       data-menu-button
       aria-expanded="false" aria-controls="menu-container">
          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="mobile-button__icon-open" href="./imagesforhomwork/sprite.svg#icon-menu-header-open_40px"></use>
-            <use class="mobile-button__icon-close" href="./imagesforhomwork/sprite.svg#icon-menu-header-close_40px"></use>
+         <use class="mobile-button__icon-open" href="./imagesforhomwork/sprite.svg#icon-menu-header-open_40px"></use>
          </svg>
+
+         <svg class="cross-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+         <use class="mobile-button__icon-close" href="./imagesforhomwork/sprite.svg#icon-menu-header-close_40px"></use>
+         </svg>
+
       </button>
 
 <div class="menu-container" data-menu id="menu-container" >
@@ -428,7 +432,7 @@
 
 <div class="footer-form">
    <p class="footer-form__text">Подпишитесь на рассылку</p>
-   <form>
+   <form class="form-two">
       <input class=" footer-form__input" type="email" name="email" placeholder="E-mail">
 
       <button type="submit" class="button-footer">Подписаться
