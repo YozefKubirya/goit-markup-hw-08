@@ -68,8 +68,11 @@
      
       z-index: 900;
 
+
       &.is-open {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
          }
 }
 
@@ -86,7 +89,12 @@ gap:300px;
 }
 }
 
+// .adaptive{
+//    @media screen and (max-width:767px) {
+      
 
+//    }
+// }
 
 .site-nav {
    display: flex;
@@ -95,7 +103,7 @@ gap:300px;
    
 
       @media screen and (max-width:768px){
-       margin-bottom: 306px;
+      //  margin-bottom: 306px;
        margin-left: 0;
        }
 
@@ -275,8 +283,10 @@ gap:300px;
       &__link{
          padding-right: 10px;
          text-decoration: none;
-         color:var(--accent-text-color);
-         font-size: 24px; 
+         color:var(--accent-text-color); 
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 1.2;
       }
    }
 

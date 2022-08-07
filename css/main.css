@@ -180,7 +180,16 @@ img {
     z-index: 900;
   }
   .menu-container.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -218,7 +227,6 @@ img {
 }
 @media screen and (max-width: 768px) {
   .site-nav {
-    margin-bottom: 306px;
     margin-left: 0;
   }
 }
@@ -424,7 +432,9 @@ img {
   padding-right: 10px;
   text-decoration: none;
   color: var(--accent-text-color);
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .hero {
@@ -541,6 +551,11 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list-btn {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-list-btn {
@@ -757,6 +772,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .features-list__title {
+    text-align: center;
+  }
 }
 .features-list__text {
   margin-top: 0;
